@@ -4,6 +4,7 @@
   tasks:
     - name: Copy text block
       lineinfile:
+        path:  /var/www/html/index.html
         create: true
         state: present
         line: "This is a test webserver for Matt's TAP Presentation"
