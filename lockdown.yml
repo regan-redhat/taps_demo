@@ -1,0 +1,13 @@
+---
+- name: Lockdown playbook
+  hosts: all
+  roles:
+    - name: redhatofficial.rhel8_stig
+      sudo_remove_nopasswd: False
+      ignore_errors: True
+
+  tasks:
+    - name: Update the system packages
+      yum:
+        name: "*"
+        state: latest

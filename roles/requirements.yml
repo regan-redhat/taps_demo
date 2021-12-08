@@ -1,0 +1,5 @@
+---
+roles:
+  - name: redhatofficial.rhel8_stig
+    version: master
+    src: https://github.com/RedHatOfficial/ansible-role-rhel8-stig
